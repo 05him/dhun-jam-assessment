@@ -6,7 +6,8 @@
     align-items: center;
     background-color: #030303;
     opacity: 0.8;
-
+    z-index: 2;
+    
     img{
         z-index:1;
         animation: 0.5s ease-in infinite blink;

@@ -8,7 +8,7 @@ import { NotFound, Unauthorized } from './pages/OtherRoutes/OtherRoutes';
 
 function App() {
 
-  const { isLoggedIn } = useAdmin();
+  const { adminData: { isLoggedIn } } = useAdmin();
 
   return (
     <div className="App">
