@@ -1,0 +1,156 @@
+@import url('../../App.css');
+
+.dashboard-main{
+    min-height: 100vh;
+    margin: auto;
+
+    .dashboard-container{
+        margin: auto;
+        width: 600px;
+    }
+
+    .graph-section{
+        width: 600px;
+        height: 350px;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        position: relative;
+    }
+
+    .rupee-symbol{
+        position: absolute;
+        top:0;
+        left: -7%;
+        height: 40px
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .section-1{
+        width: 100%;
+    }
+
+    .section-1>div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1.5rem 0;
+    }
+
+    .section-1>div>div{
+        width: 45%;
+    }
+
+    .input-custom-song{
+        width: 100%;
+        display: block;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        background-color: transparent;
+        color: var(--font-color);
+        outline: none;
+        border: 1px solid;
+        border-radius: 10px;
+    }
+
+    .amounts-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .amounts-span{
+        width: 22.5%;
+    }
+
+    .amounts-container input{
+        width:100%;
+        background: none;
+        color: var(--font-color);
+        border: 1px solid;
+        padding: 0.5rem;
+        border-radius: 10px;;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .input-custom-container{
+        position: relative;
+    }
+
+    .custom-error{
+        position: absolute;
+        font-size: 14px;
+        color: red; 
+    }
+
+    .amounts-span{
+        position: relative;
+    }
+
+    .amounts-error{
+        position: absolute;
+        left:0;
+        bottom:0;
+        transform: translateY(100%);
+        color: red;
+        font-size: 14px;
+    }
+
+    .save-btn{
+        width: 100%;
+        padding: 1rem 0;
+        font-size:16px;
+        font-weight: 600;
+        background-color: var(--primary-btn-color);
+        color: var(--font-color);
+        border-radius: 15px;
+    }
+
+    .save-btn:hover{
+        border: 1px solid #F0C3F1;
+    }
+
+    .save-btn:disabled{
+        background-color: var(--disabled-color);
+        cursor:not-allowed;
+    }
+
+    .save-btn:disabled:hover{
+        transform: none;
+        border: none;
+    }
+
+    .disable-font{
+        color: var(--disabled-color);
+    }
+
+    input:disabled{
+        color: var(--disabled-color);
+        cursor: not-allowed;
+        border-color: var(--disabled-color);
+    }
+
+    .radio-container{
+        text-align: center;
+    }
+
+    .radio-container label{
+        display: inline-flex;
+        align-items: center;
+        margin: 0 1rem;
+        gap: 0.35rem;
+        cursor: pointer;
+    }
+}
+
+input[type='radio']{
+    accent-color: var(--primary-btn-color);
+    height: 15px;
+    width: 15px;
+}

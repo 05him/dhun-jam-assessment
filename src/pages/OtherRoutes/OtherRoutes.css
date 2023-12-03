@@ -1,0 +1,7 @@
+@import url('../../App.css');
+
+h1, p{
+    width: 600px;
+    text-align: center;
+    margin: auto;
+}
